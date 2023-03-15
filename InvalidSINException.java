@@ -17,6 +17,8 @@ public class InvalidSINException extends Exception
     }
     /**
      * getter for SIN that caused the exception
+     * we need this because the message in catch refers to the 
+     * invlid sin
      */
     public String getSin(){
         return sin;

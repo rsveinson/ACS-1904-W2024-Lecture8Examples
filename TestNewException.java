@@ -28,6 +28,7 @@
               e.printStackTrace();
         }
         
+        /*an invalid sin outside of the try/catch*/
         // System.out.println("Attempting to create employee 046454286");
         // Employee e3 = new Employee("0454286", "Keith Moon", "drummer");
         // System.out.println("Create OK: "+e3);
