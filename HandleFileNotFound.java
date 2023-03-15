@@ -13,7 +13,7 @@ public class HandleFileNotFound {
             JOptionPane.showMessageDialog(null, "Success, file found");
         }
         catch (FileNotFoundException e){
-            JOptionPane.showMessageDialog(null, "Error, file not found");
+            JOptionPane.showMessageDialog(null, "Error, file not found" + e);
         }
         finally{
             JOptionPane.showMessageDialog(null, "finally clause executing");
