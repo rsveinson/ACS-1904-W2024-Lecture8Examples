@@ -2,6 +2,8 @@
  * Exception for invalid social insurance number
  * as a subclass of Exception, and so a calling 
  * program must use try/catch or a throws clause.
+ * 
+ * we want a checked exception: so extend Exception
  */
 public class InvalidSINException extends Exception
 {

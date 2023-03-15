@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 import javax.swing.JOptionPane;
 
-public class ReadFromBinaryUntilEndOfFile {
-    public static void main(String[] args) 
+public class ReadFromBinaryUntilEndOfFile{
+    public static void main(String[] args)
     {
         DataInputStream is = getFile();
         int total = 0;
@@ -26,8 +26,8 @@ public class ReadFromBinaryUntilEndOfFile {
         // if not set to null 
         // and is not set to null in catch block
         //we get an error
-        DataInputStream is = null;
-        //DataInputStream is;
+        //DataInputStream is = null;
+        DataInputStream is;
         
         try {
             is = new DataInputStream( new FileInputStream(fileName));
