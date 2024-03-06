@@ -4,7 +4,7 @@
  */
     public class TestNewException
 {
-    public static void main(String[] args)
+    public static void main(String[] args)throws InvalidSINException
     {
         try {
             // a valid SIN.
