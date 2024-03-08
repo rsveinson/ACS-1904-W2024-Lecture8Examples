@@ -38,7 +38,7 @@ public class ReadFromBinaryUntilEndOfFile{
             is = null;
         }
         return is;
-    }
+    }// end get file
 
     public static int getTotal(DataInputStream is){ 
         int total = 0;
