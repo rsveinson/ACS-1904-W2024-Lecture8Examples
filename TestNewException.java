@@ -9,7 +9,7 @@
         try {
             // a valid SIN.
             System.out.println("Attempting to create employee 046454286");
-            Employee e1 = new Employee("046454286", "Joe Who", "instructor");
+            Employee e1 = new Employee("04645428600", "Joe Who", "instructor");
             System.out.println("Create OK: "+e1);
             
             // not valid SIN.

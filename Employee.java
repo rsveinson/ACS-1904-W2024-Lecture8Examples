@@ -73,7 +73,9 @@ public class Employee
             // System.out.println(i+" "+c+" "+digit+" "+total);
         }
         // if total is a multiple of 10 the sin is valid
-        validSin = (total % 10 == 0);
+        // use &= bitwise and so that if validSin is 
+        // currently false a true % 10 won't make it true
+        validSin &= (total % 10 == 0);
         return validSin;
     }
 }
