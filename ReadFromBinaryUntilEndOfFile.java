@@ -75,6 +75,7 @@ public class ReadFromBinaryUntilEndOfFile{
         }
         catch (IOException e){
             JOptionPane.showMessageDialog(null, "Error, an IOException occurred closing the file");
+            System.out.println(is);
         }
     }
 }

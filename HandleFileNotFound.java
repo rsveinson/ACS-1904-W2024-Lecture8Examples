@@ -7,6 +7,7 @@ public class HandleFileNotFound {
     {
         String fileName = JOptionPane.showInputDialog("Enter file name:");
         DataInputStream is = null;
+        //DataInputStream is;
         
         try {
             is = new DataInputStream( new FileInputStream(fileName));
@@ -21,5 +22,8 @@ public class HandleFileNotFound {
             // that involves another exception, and so we leave that to a later
             // example.
         }
+        //int n = is.readInt();
+        
+        System.out.println("end");
     }
 }

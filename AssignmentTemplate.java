@@ -10,6 +10,9 @@ public class AssignmentTemplate{
     public static void main(String[] args)throws FileNotFoundException {
         
         Scanner scanner = new Scanner(System.in);
+        
+        int[][] a = new int[10][10];
+        
 
         
         
