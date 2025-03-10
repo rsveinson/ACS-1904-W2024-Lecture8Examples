@@ -9,8 +9,8 @@ public class Q2Source
         
         while (!number.equals("q")){
             
-            int n = Integer.parseInt(number); 
-            //int n = parseInput(number);
+            //int n = Integer.parseInt(number); 
+            int n = parseInput(number);
             total += n;
             System.out.println("enter a number: ");
             number = kb.next();

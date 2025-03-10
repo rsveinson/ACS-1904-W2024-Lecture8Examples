@@ -14,9 +14,10 @@ public class ReadFromBinaryUntilEndOfFile{
         if ( is != null ){
             total = getTotal(is);
             closeFile(is);
+            JOptionPane.showMessageDialog(null, "total = "+total);
         }
         
-        JOptionPane.showMessageDialog(null, "total = "+total);
+        //JOptionPane.showMessageDialog(null, "total = "+total);
         System.out.println("end");
     }
 
