@@ -32,11 +32,19 @@ public class ReadFromBinaryUntilEndOfFile{
         try {
             is = new DataInputStream( new FileInputStream(fileName));
             JOptionPane.showMessageDialog(null, "Success, file found");
-        }
+        }// end try
         catch (FileNotFoundException e){
             JOptionPane.showMessageDialog(null, "Error, file not found");
             is = null;
-        }
+        }// end catch
+        
+        /* note that we don't use a finally clause
+         * if we did something like
+         * finally{
+         *     is = null;
+         *    }
+         *    is would be set to null every time
+         */
         return is;
     }// end get file
 
