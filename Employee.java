@@ -4,7 +4,7 @@ public class Employee
     private String name;
     private String position;
     
-    public Employee (String sin, String name, String position) throws InvalidSINException{
+    public Employee (String sin, String name, String position)throws InvalidSINException{
         
         if (! validate(sin)) 
             throw new InvalidSINException(sin);
