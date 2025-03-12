@@ -52,12 +52,16 @@ public class ReadFromBinaryUntilEndOfFile{
     public static int getTotal(DataInputStream is){ 
         int total = 0;
         // read integers until there are none left
+        
+        String s;
+        int i = 0;
+        
         boolean endOfFile = false;
-        int i;
         while (! endOfFile){
             try{
                 // readInt can throw EOFException or an IOException
                 i = is.readInt();
+
                 total += i;
                 System.out.println(i);
                 System.out.println(total);

@@ -9,10 +9,24 @@
         try {
             // a valid SIN.
             System.out.println("Attempting to create employee 046454286");
-            Employee e1 = new Employee("04645428600", "Joe Who", "instructor");
+            Employee e1 = new Employee("046454286", "Joe Who", "instructor");
             System.out.println("Create OK: "+e1);
             
-            // not valid SIN.
+            // invalid SIN. too long
+            // System.out.println("Attempting to create employee 04645428600");
+            // Employee e1 = new Employee("04645428600", "Joe Who", "instructor");
+            // System.out.println("Create OK: "+e1);
+            
+            // invalid SIN. too short
+            /* the current implemntation doesn't account for
+             * a too short SIN, we get an ArrayIndexOutOfBounds
+             * exception. How can we fix this problem?
+             */
+            // System.out.println("Attempting to create employee 434343");
+            // Employee e1 = new Employee("434343", "Joe Who", "instructor");
+            // System.out.println("Create OK: "+e1);
+            
+            // not valid SIN. failed check sum
             // An exception will be thrown
             System.out.println("\nAttempting to create employee 123456789");
             Employee e2 = new Employee("123456789", "Steve Stephens", "instructor");

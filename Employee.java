@@ -39,6 +39,16 @@ public class Employee
         return "Employee "+getSin()+", "+getName()+", "+getPosition();
     }
 
+    /*****************************************
+    * Description: Checks a SIN number to see if it is valid,
+    *               A valid SIN is nine digits in length and
+    *               passes the checksum test
+    * 
+    * @param        String: sin, a SIN number
+    * 
+    * @return       bollean validSin: true if the SIN passes all the test, false
+    *                                   otherwise.
+    * ****************************************/
     public boolean validate(String sin){
         boolean validSin = true;
         
@@ -51,10 +61,10 @@ public class Employee
         
         // validate the check sum for a SIN
         int total = 0;
-        for (int i=0; i<9; i++){
+        for (int i = 0; i < sinChars.length; i++){
             char c = sinChars[i];
             
-            // all characgers must be digits
+            // all characters must be digits
             if (!Character.isDigit(c)) 
                 validSin = false;
             
@@ -70,9 +80,14 @@ public class Employee
                 digit -= 9;
                 
             total += digit;
-            // System.out.println(i+" "+c+" "+digit+" "+total);
+            //System.out.println(i+" "+c+" "+digit+" "+total);
         }
         // if total is a multiple of 10 the sin is valid
+        // if(total % 10 != 0){
+            // validSin = false;
+        // }
+        
+        // or
         // use &= bitwise and so that if validSin is 
         // currently false a true % 10 won't make it true
         validSin &= (total % 10 == 0);
